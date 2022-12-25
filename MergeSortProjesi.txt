@@ -1,0 +1,17 @@
+[16,21,11,8,12,22] -> Merge Sort
+
+Yukarıdaki dizinin sort türüne göre aşamalarını yazınız.
+
+[16,21,11,8,12,22]
+
+1.Adım: [16,21,11] - [8,12,22] = Sıralanacak eleman dizisi 2 eş parçaya ayrılır. 
+2.Adım: [16,21] - [11] - [8,12] - [22] = Parçalanan eleman dizisi tekrardan parçalanır.
+3.Adım: [16] - [21] - [11] - [8] - [12] - [22] = Tüm elemanlar tek elemana düşürülene kadar parçalama işlemi devam eder. 3. Adımda artık parçalama işlemi tamamlanmıştır. Bundan sonra birleştirme ve sıralama işlemi başlayacaktır.
+4.Adım: [16,21] - [11] - [8] - [12,22] = Hem birleştirme hem de sıralama mantığı başlayacaktır.
+5.Adım: [11,16,21] - [8,12,22]
+6.Adım: [8,11,12,16,21,22] = İşlem tamamlanmıştır.
+
+Big-O gösterimini yazınız.
+
+Hem parçalama hem de bölme olayında doğrusal zaman aldığı için, 3 durumda da (Worst, Average ve Best)
+O(nLogn)'dir.
