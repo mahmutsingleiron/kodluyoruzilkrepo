@@ -1,0 +1,21 @@
+[7,5,1,8,3,6,0,9,4,2] dizisinin Binary-Search-Tree aşamalarını yazınız.
+
+Root'un sağ tarafından kendinden büyük elemanlar, sol tarafında ise küçük elemanlar bulunur.
+Binary Search Tree oluştururken yukarıdaki bilgi referans alınır.
+
+Root [5]'tir. Root'un sağında 7, solunda 1 bulunur.(Büyükse sağa, küçükse sola)
+[8] Root'tan büyüktür sağa ilerler; 7'den de büyüktür, tekrar sağa ilerler.
+[3] Root'tan küçüktür sola ilerler, 1'den büyüktür sağa ilerler.
+[6] Root'tan büyüktür sağa ilerler, 7'den küçüktür sola ilerler.
+[0] Root'tan küçüktür sola ilerler, 1'den de küçüktür sola ilerler.
+[9] Root'tan büyüktür sağa ilerler, 7'den de büyüktür, tekrar sağa ilerler. 8'den de büyüktür, son kez sağa ilerler.
+[4] Root'tan küçüktür sola ilerler, 1'den büyüktür, sağa ilerler. 3'ten de büyüktür, tekrar sağa ilerler.
+[2] Root'tan küçüktür sola ilerler, 1'den büyüktür, sağa ilerler. 3'ten küçüktür, sola ilerler.
+
+                                                                                              5
+                                                                                           /     \
+                                                                                          1       7
+                                                                                         / \     / \
+                                                                                        0   3   6   8
+                                                                                           / \       \
+                                                                                          2   4       9
